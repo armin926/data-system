@@ -191,7 +191,7 @@ const metrics = computed(() => [
     icon: User,
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     trend: CaretTop,
-    trendText: '较上期 +5.2%',
+    trendText: '较上期 +1.2%',
     trendClass: 'trend-up'
   },
   {
@@ -208,18 +208,18 @@ const metrics = computed(() => [
     value: `${stats.value.excellentRate.toFixed(2)}%`,
     icon: Star,
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    trend: CaretBottom,
-    trendText: '较上期 -1.3%',
-    trendClass: 'trend-down'
+    trend: CaretTop,
+    trendText: '较上期 +1.3%',
+    trendClass: 'trend-up'
   },
   {
     label: '平均分',
     value: stats.value.averageScore.toFixed(1),
     icon: DataAnalysis,
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-    trend: CaretTop,
-    trendText: '较上期 +3.5',
-    trendClass: 'trend-up'
+    trend: CaretBottom,
+    trendText: '较上期 -0.2',
+    trendClass: 'trend-down'
   }
 ])
 
